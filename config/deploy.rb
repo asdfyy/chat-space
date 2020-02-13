@@ -30,6 +30,8 @@ namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
   end
+
+
 end
 #   # desc 'upload master.key'#ここ注意
 #   task :upload do
@@ -50,3 +52,4 @@ set :default_env, {
   AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
   AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"]
 }
+
